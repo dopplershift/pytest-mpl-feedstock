@@ -1,4 +1,4 @@
-{% set version = "0.3" %}
+{% set version = "0.5" %}
 
 package:
   name: pytest-mpl
@@ -6,8 +6,8 @@ package:
 
 source:
   fn: pytest-mpl-{{version}}.tar.gz
-  url: https://pypi.python.org/packages/source/p/pytest-mpl/pytest-mpl-{{version}}.tar.gz
-  md5: 45912acdd8ae63358711de431ac076ec
+  url: https://pypi.io/packages/source/p/pytest-mpl/pytest-mpl-{{version}}.tar.gz
+  md5: 760d6304b933dd21cf576366caccfae3
 
 build:
     script: python setup.py install --single-version-externally-managed --record record.txt
@@ -36,3 +36,4 @@ about:
 extra:
   recipe-maintainers:
     - dopplershift
+    - astrofrog
