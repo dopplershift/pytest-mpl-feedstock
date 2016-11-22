@@ -23,6 +23,7 @@ requirements:
     - setuptools
     - pytest
     - matplotlib
+    - nose
 
 test:
   commands:
