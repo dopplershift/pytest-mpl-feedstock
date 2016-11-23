@@ -1,4 +1,4 @@
-{% set version = "0.5" %}
+{% set version = "0.6" %}
 
 package:
   name: pytest-mpl
@@ -7,7 +7,7 @@ package:
 source:
   fn: pytest-mpl-{{version}}.tar.gz
   url: https://pypi.io/packages/source/p/pytest-mpl/pytest-mpl-{{version}}.tar.gz
-  md5: 760d6304b933dd21cf576366caccfae3
+  md5: e00c06dee7fa0d70de833d4e5396e3c3
 
 build:
     script: python setup.py install --single-version-externally-managed --record record.txt
@@ -23,6 +23,7 @@ requirements:
     - setuptools
     - pytest
     - matplotlib
+    - nose
 
 test:
   commands:
