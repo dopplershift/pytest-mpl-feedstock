@@ -1,4 +1,4 @@
-{% set version = "0.6" %}
+{% set version = "0.7" %}
 
 package:
   name: pytest-mpl
@@ -7,7 +7,7 @@ package:
 source:
   fn: pytest-mpl-{{version}}.tar.gz
   url: https://pypi.io/packages/source/p/pytest-mpl/pytest-mpl-{{version}}.tar.gz
-  md5: e00c06dee7fa0d70de833d4e5396e3c3
+  md5: 9c9bc0f4b48c14497600fde10db07336
 
 build:
     script: python setup.py install --single-version-externally-managed --record record.txt
